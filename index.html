@@ -1,11 +1,77 @@
-<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
-<html lang="en"> <!-- 开始HTML文档，并设置页面的主要语言为英语 -->
-<head> <!-- 开始头部区域，包含文档的元数据 -->
-  <meta charset="UTF-8"> <!-- 指定字符编码为UTF-8 -->
-  <title>liud</title> <!-- 定义网页的标题 -->
-</head> <!-- 结束头部区域 -->
-<body> <!-- 开始文档的主体部分，即网页上可见的内容 -->
-  <h1>liud个人主页</h1> <!-- 创建一个一级标题 -->
-  <h1>你好！</h1> <!-- 创建另一个一级标题 -->
-</body> <!-- 结束文档的主体部分 -->
-</html> <!-- 结束HTML文档 -->
+<!DOCTYPE html>
+<html lang="zh-CN"> <!-- 将语言改为中文，使页面更适配内容 -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 添加视口设置以便移动端友好 -->
+  <title>liud的个人主页与日记</title> <!-- 优化标题 -->
+  <style>
+    /* 基本样式：参考了搜索结果中诗歌展示的样式设计 */
+    body {
+      font-family: 'Microsoft YaHei', Arial, sans-serif; /* 使用中文字体 */
+      background-color: #f9f9f9;
+      color: #333;
+      margin: 20px;
+      line-height: 1.6;
+    }
+    h1 {
+      color: #2c3e50;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 10px;
+    }
+    h2 {
+      color: #16a085;
+    }
+    .diary {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      margin-top: 20px;
+    }
+    .date {
+      font-size: 1.1em;
+      color: #7f8c8d;
+      margin-bottom: 15px;
+    }
+    .poem {
+      font-style: italic;
+      text-align: center; /* 诗歌居中显示 */
+    }
+    .poem p {
+      margin: 10px 0;
+      font-size: 1.2em;
+      line-height: 1.8;
+    }
+  </style>
+</head>
+<body>
+  <h1>liud个人主页</h1>
+  <h2>你好！</h2> <!-- 将第二个h1改为h2，以符合HTML语义规范（一个页面只应有一个h1） -->
+
+  <!-- 新增日记部分：使用section标签增强语义 -->
+  <section class="diary">
+    <h3>📖 炒股日记NO.1</h3>
+    <p class="date">2025年12月17日，星期三 </p> <!-- 硬编码日期 -->
+    <div class="poem">
+      <p>吊</p>
+      <p>卖飞之于踏空</p>
+      <p>正如包皮过长之于中年阳痿</p>
+    </div>
+  </section>
+  
+<!-- 新增图片展示区域 -->
+  <section class="image-gallery">
+    <h3>持有龙洲第三天>chiy
+    <div class="featured-image">
+      <!-- 
+        将 `src` 属性的值替换为您想展示的图片的URL。
+        示例：
+        1. 网络图片: src="https://example.com/your-image.jpg"
+        2. 本地图片: src="./images/my-photo.jpg" (请确保图片文件在对应路径)
+      -->
+      <img src="https://via.placeholder.com/600x400/3498db/ffffff?text=Your+Image+Here" alt="示例图片">
+      <p class="image-caption">这是一张示例图片，请替换为您想展示的图片。</p>
+    </div>
+  </section>
+</body>
+</html>
